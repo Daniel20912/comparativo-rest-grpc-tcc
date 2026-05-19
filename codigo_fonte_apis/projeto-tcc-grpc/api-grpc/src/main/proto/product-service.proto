@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "com.danieloliveira.grpc";
+
+package product;
+
+message ProductRequest {
+  string name = 1;
+  string description = 2;
+  string category = 3;
+  double price = 4;
+  int32 stock = 5;
+}
+
+message ProductResponse{
+  int64 id = 1;
+  string name = 2;
+  string description = 3;
+  string category = 4;
+  double price = 5;
+  int32 stock = 6;
+  string createdAt = 7;
+}
+
+message GetProductRequest {
+  int64 id = 1;
+}
+
+message UpdateProductRequest {
+  int64 id = 1;
+  ProductRequest product = 2;
+}
+
+service ProductGrpcService {
+
+  rpc Create (ProductRequest) returns (ProductResponse);
+
+  rpc FindById (GetProductRequest) returns (ProductResponse);
+
+  rpc Update (UpdateProductRequest) returns (ProductResponse);
+
+  rpc Delete (GetProductRequest) returns (google.protobuf.Empty);
+}

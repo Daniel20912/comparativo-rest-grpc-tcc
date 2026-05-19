@@ -1,0 +1,29 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-03-15T18:55:10.330-03:00  INFO 24160 --- [api-grpc] [           main] c.d.api_grpc.ApiGrpcApplication          : Starting ApiGrpcApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 24160 (D:\JavaProjects\projeto-tcc-grpc\api-grpc\target\api-grpc-0.0.1-SNAPSHOT.jar started by Daniel Oliveira in D:\)
+2026-03-15T18:55:10.355-03:00  INFO 24160 --- [api-grpc] [           main] c.d.api_grpc.ApiGrpcApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-15T18:55:11.543-03:00  INFO 24160 --- [api-grpc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-15T18:55:11.555-03:00  INFO 24160 --- [api-grpc] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-15T18:55:11.556-03:00  INFO 24160 --- [api-grpc] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-15T18:55:11.582-03:00  INFO 24160 --- [api-grpc] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-15T18:55:11.583-03:00  INFO 24160 --- [api-grpc] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2026-03-15T18:55:12.087-03:00  INFO 24160 --- [api-grpc] [           main] g.s.a.GrpcServerFactoryAutoConfiguration : Detected grpc-netty-shaded: Creating ShadedNettyGrpcServerFactory
+2026-03-15T18:55:12.360-03:00  INFO 24160 --- [api-grpc] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-15T18:55:12.432-03:00  INFO 24160 --- [api-grpc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-15T18:55:12.556-03:00  INFO 24160 --- [api-grpc] [           main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: product.ProductGrpcService, bean: productService, class: com.danieloliveira.api_grpc.service.ProductService
+2026-03-15T18:55:12.556-03:00  INFO 24160 --- [api-grpc] [           main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.health.v1.Health, bean: grpcHealthService, class: io.grpc.protobuf.services.HealthServiceImpl
+2026-03-15T18:55:12.557-03:00  INFO 24160 --- [api-grpc] [           main] n.d.b.g.s.s.AbstractGrpcServerFactory    : Registered gRPC service: grpc.reflection.v1alpha.ServerReflection, bean: protoReflectionService, class: io.grpc.protobuf.services.ProtoReflectionService
+2026-03-15T18:55:12.661-03:00  INFO 24160 --- [api-grpc] [           main] n.d.b.g.s.s.GrpcServerLifecycle          : gRPC Server started, listening on address: *, port: 9091
+2026-03-15T18:55:12.676-03:00  INFO 24160 --- [api-grpc] [           main] c.d.api_grpc.ApiGrpcApplication          : Started ApiGrpcApplication in 2.954 seconds (process running for 3.361)
+Banco de dados populado. Os dados serão idênticos em toda inicialização.
+2026-03-15T18:55:13.111-03:00  INFO 24160 --- [api-grpc] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15T18:55:13.151-03:00  INFO 24160 --- [api-grpc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-15T18:55:13.152-03:00  INFO 24160 --- [api-grpc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

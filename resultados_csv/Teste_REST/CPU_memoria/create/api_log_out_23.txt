@@ -1,0 +1,24 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-03-14T21:42:17.313-03:00  INFO 13672 --- [api-rest] [           main] c.d.api_rest.ApiRestApplication          : Starting ApiRestApplication v0.0.1-SNAPSHOT using Java 25.0.2 with PID 13672 (D:\JavaProjects\projeto-tcc-rest\api-rest\target\api-rest-0.0.1-SNAPSHOT.jar started by Daniel Oliveira in D:\)
+2026-03-14T21:42:17.343-03:00  INFO 13672 --- [api-rest] [           main] c.d.api_rest.ApiRestApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-14T21:42:18.335-03:00  INFO 13672 --- [api-rest] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-14T21:42:18.348-03:00  INFO 13672 --- [api-rest] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-14T21:42:18.452-03:00  INFO 13672 --- [api-rest] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-03-14T21:42:18.479-03:00  INFO 13672 --- [api-rest] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-14T21:42:18.480-03:00  INFO 13672 --- [api-rest] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2026-03-14T21:42:19.017-03:00  INFO 13672 --- [api-rest] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-03-14T21:42:19.078-03:00  INFO 13672 --- [api-rest] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-14T21:42:19.135-03:00  INFO 13672 --- [api-rest] [           main] c.d.api_rest.ApiRestApplication          : Started ApiRestApplication in 2.423 seconds (process running for 2.799)
+Banco de dados populado. Os dados serão idênticos em toda inicialização.
+2026-03-14T21:42:23.092-03:00  INFO 13672 --- [api-rest] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-14T21:42:23.093-03:00  INFO 13672 --- [api-rest] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-14T21:42:23.095-03:00  INFO 13672 --- [api-rest] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
