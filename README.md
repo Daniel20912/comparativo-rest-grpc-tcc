@@ -64,26 +64,6 @@ Médias de 30 execuções por cenário. Valores em **negrito** indicam o menor c
 
 Os detalhes, gráficos de variabilidade e a discussão completa estão no artigo.
 
-## Como reproduzir
-
-> Ajuste os nomes de arquivos e comandos abaixo conforme o conteúdo real das pastas.
-
-### Pré-requisitos
-
-- Windows 11 (ambiente usado no estudo) com PowerShell
-- Java 25 (LTS) e Maven ou Gradle
-- Apache JMeter (com o plugin de suporte a gRPC)
-- Prometheus
-- Python 3 com as bibliotecas `pandas`, `scipy` e `requests` (instale com `pip install pandas scipy requests`; confira o arquivo de dependências, se houver)
-
-### Passo a passo
-
-1. **Subir as APIs.** Compile e execute cada versão (REST e gRPC) a partir de `codigo_fonte_apis/`. O REST escuta na porta 8080 e o gRPC na 9091.
-2. **Configurar o Prometheus** para coletar as métricas expostas pelo Spring Boot Actuator de cada aplicação.
-3. **Executar os testes.** Rode os scripts de `scripts_powershell/`: um para as métricas de rede (latência e vazão) e outro para as métricas de infraestrutura (CPU e memória). Ambos utilizam os planos de `planos_de_teste_jmeter/`.
-4. **Processar os dados.** Execute os scripts de `scripts_python/` sobre os arquivos gerados para limpar os dados (filtro de warm-up), consolidar as séries e aplicar os testes estatísticos.
-5. **Comparar com os dados publicados** em `resultados_csv/`.
-
 ## Limitações
 
 - Execução em **localhost** e em um único hardware (Intel Core i5-10300H, 16 GB de RAM), sem latência real de rede.
